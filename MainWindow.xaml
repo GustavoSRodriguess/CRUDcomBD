@@ -1,0 +1,26 @@
+﻿<Window x:Class="perdeuMane.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:perdeuMane"
+        mc:Ignorable="d"
+        Title="Principal" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid x:Name="WINprincipal">
+        <Label Content="CRUD de mane" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="DTGmanes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,36,423,15" CanUserAddRows="False" CanUserDeleteRows="False" SelectionChanged="DTGmanes_SelectionChanged" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserSortColumns="False"/>
+        <Label x:Name="LBLnome" Content="Nome" HorizontalAlignment="Left" Margin="420,113,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBLemail" Content="Email" HorizontalAlignment="Left" Margin="420,145,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBLcodigo" Content="Codigo" HorizontalAlignment="Left" Margin="420,82,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BTNalterar" Content="Alterar mane" HorizontalAlignment="Left" Margin="420,44,0,0" VerticalAlignment="Top" Width="89" Click="BTNalterar_Click"/>
+        <Button x:Name="BTNcadastrar" Content="Cadastrar mane" HorizontalAlignment="Left" Margin="520,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.371,-0.089" Click="BTNcadastrar_Click"/>
+        <Button x:Name="BTNgravar" Content="Gravar" HorizontalAlignment="Left" Margin="487,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Click="BTNgravar_Click" Width="49"/>
+        <Button x:Name="BTNcancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="558,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.579,0.48" Click="BTNcancelar_Click"/>
+        <TextBox x:Name="TBXcodigo" HorizontalAlignment="Left" Margin="487,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55"/>
+        <TextBox x:Name="TBXnome" HorizontalAlignment="Left" Margin="487,117,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="TBXemail" HorizontalAlignment="Left" Margin="487,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="219"/>
+        <Button x:Name="BTNapagar" Content="Apagar mané" HorizontalAlignment="Left" Margin="619,44,0,0" VerticalAlignment="Top" Width="87" />
+        <Label Content="Celular" HorizontalAlignment="Left" Margin="421,176,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBXcelular" HorizontalAlignment="Left" Margin="487,184,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="219"/>
+    </Grid>
+</Window>
